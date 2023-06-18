@@ -13,13 +13,11 @@ int main(void)
 
 	for (c = 'a' ; c <= 'z' ; c++)
 	{
-		putchar(c);
+		if ((c == 'q' || c == 'e') != 1)
+		{
+			putchar(c);
+		}
 
-	}
-
-	for (c = 'A' ; c <= 'Z' ; c++)
-	{
-		putchar(c);
 	}
 	putchar('\n');
 	return (0);
